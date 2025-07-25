@@ -1,55 +1,79 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f9f9f9 50%, #dff9fb 100%);
     margin: 0;
-    padding: 20px;
-    text-align: center;
-}
-
-h1 {
+    padding: 0;
     color: #2c3e50;
 }
 
-a {
-    display: inline-block;
-    margin: 10px;
-    padding: 10px 20px;
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
+.container {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-a:hover {
-    background-color: #2980b9;
+h1, h3 {
+    text-align: center;
+    color: #130f40;
+    margin-bottom: 20px;
 }
 
-input {
-    padding: 10px;
-    margin: 10px;
-    width: 250px;
-    border-radius: 5px;
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, button {
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
     border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+input:focus {
+    border-color: #27ae60;
+    outline: none;
 }
 
 button {
-    padding: 10px 20px;
-    margin: 10px;
     background-color: #27ae60;
-    color: white;
+    color: #fff;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    transition: 0.3s ease;
 }
 
 button:hover {
-    background-color: #1e8449;
+    background-color: #219150;
+    transform: translateY(-2px);
 }
 
-#productList, #orderStatus, #receivedOrders {
+.product-item, .order-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ecf0f1;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.product-item:hover, .order-item:hover {
+    background: #dff9fb;
+    transform: scale(1.02);
+}
+
+#searchBar {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+#receivedOrders, #productList, #orderStatus {
     margin-top: 20px;
-    padding: 10px;
-    background-color: #ffffff;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
