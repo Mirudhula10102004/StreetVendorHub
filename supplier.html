@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Supplier Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Firebase Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <!-- Firebase Config -->
+    <script src="js/firebase-config.js" defer></script>
+
+    <!-- Supplier JS -->
+    <script src="js/supplier.js" defer></script>
+</head>
+<body>
+    <h1>Supplier Dashboard</h1>
+
+    <form id="addProductForm">
+        <input type="text" id="productName" placeholder="Product Name" required>
+        <input type="number" id="productPrice" placeholder="Price" required>
+        <button type="submit">Add Product</button>
+    </form>
+
+    <h3>Orders Received</h3>
+    <div id="receivedOrders"></div>
+</body>
+</html>
