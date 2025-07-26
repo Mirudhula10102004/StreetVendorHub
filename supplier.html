@@ -11,18 +11,23 @@
 </head>
 <body>
     <div class="container">
-        <h1>Supplier Dashboard</h1>
-        <form id="addProductForm">
-            <input type="text" id="productName" placeholder="Product Name" required>
-            <input type="number" id="productPrice" placeholder="Price" required>
-            <button type="submit">Add Product</button>
+        <h1>Supplier Dashboard 🏪</h1>
+
+        <form id="addProductForm" class="form-section">
+            <input type="text" id="productName" placeholder="🍎 Product Name (e.g., Tomato, Oil Can)" required>
+            <input type="number" id="productPrice" placeholder="💰 Price (₹)" required>
+            <button type="submit" class="add-btn">➕ Add Product</button>
         </form>
 
-        <h3>Orders Received</h3>
-        <div id="receivedOrders"></div>
+        <h3>Orders Received 📥</h3>
+        <div id="receivedOrders">
+            <!-- Orders will show here -->
+        </div>
 
-        <!-- Link back to Vendor Dashboard -->
-        <a href="index.html" class="nav-link">Go to Vendor Dashboard</a>
+        <div class="dashboard-nav">
+            <a href="vendor.html" class="nav-link">Switch to Vendor Dashboard 🛒</a>
+            <a href="index.html" class="nav-link">Back to Home 🏠</a>
+        </div>
     </div>
 </body>
 </html>

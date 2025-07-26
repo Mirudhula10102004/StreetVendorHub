@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Vendor Dashboard</title>
+    <title>Vendor Dashboard - StreetVendorHub</title>
     <link rel="stylesheet" href="css/style.css">
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
@@ -11,11 +11,25 @@
 </head>
 <body>
     <div class="container">
-        <h1>Vendor Dashboard</h1>
-        <input type="text" id="searchBar" placeholder="Search Suppliers or Products">
-        <div id="productList"></div>
-        <h3>Your Orders</h3>
-        <div id="orderStatus"></div>
+        <h1>Vendor Dashboard 🛒</h1>
+
+        <div class="search-section">
+            <input type="text" id="searchBar" placeholder="🔍 Search Products (e.g., Dosa Batter, 🌮 Tacos)">
+        </div>
+
+        <div id="productList" class="product-grid">
+            <!-- Products will load here dynamically -->
+        </div>
+
+        <h3>Your Orders 📦</h3>
+        <div id="orderStatus">
+            <!-- Orders will show here -->
+        </div>
+
+        <div class="dashboard-nav">
+            <a href="supplier.html" class="nav-link">Switch to Supplier Dashboard 🏪</a>
+            <a href="index.html" class="nav-link">Back to Home 🏠</a>
+        </div>
     </div>
 </body>
 </html>
